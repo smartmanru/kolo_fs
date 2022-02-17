@@ -1,1 +1,44 @@
-[![](https://mermaid.ink/img/pako:eNqdVd2K00AUfpVDYO8SmDlJXZo7oerVXnklFEJsJmuwSZZ0uiLLgrvunYLgtaCPoBfFVWl9hckbeaZJk8nuNrYd0jKZnL9vvu_MXFiTPBKWb52GmZTjDGjIRE4FPIZneglGSXhahGn1KQqleJoXaSgBRiPn5MR5QaP6Vv3PxEQmeQbljbotr9VSLcorKK_USv2kl-_0uy0_AYM8jqdJJionPdRftSKHlfoNLvghRTkXdjxjgRvUtjZw5jB0kCHa6G2m--TlvXkRwI_yTKflATZp-bHDeJWV38l6r3DwJ0Ui1wGMupnr0LOOwAYOPd0IR0dmEI-CaH-v8W8t98GKvVj5BivEMwy4UevQ4WuI3EbcAN-6XdoZHyi0C8mtLQ3DfZC4uyGJZ64BhD1qcPAGB2wF0gjONZn3Wr01FPaDdA3e90NJ2sx2Ack1yKwm67gBCVqm2M9Wo01sIoSxFAV0-4yzN_0g1-LODsCIfRixKRCNArUIaw50Gw124AAPLc-9V143PK8pbgnYZom1JbaF_Fc1dw3bhu9iUJ_VFyDnpfpDlf9Sy62KqUV9npqa0SdnfZwxmnrGhj6Yp7yhTTskE28T4XDTPbDtMFPfiJPr8p3mp_xgJPpavqeVj0CZiLCF-qEWtVDO5jJ4HczES90Jg_aIHbatatlWKui-SiK64y501LElX4lUjC2fppGIw_lUjq1xdkmm8zN9wT2JEpkXli-LubCtcC7z52-zyea9sqlvxWrx8h-kAc1a)](https://mermaid-js.github.io/mermaid-live-editor/edit/#pako:eNqdVd2K00AUfpVDYO8SmDlJXZo7oerVXnklFEJsJmuwSZZ0uiLLgrvunYLgtaCPoBfFVWl9hckbeaZJk8nuNrYd0jKZnL9vvu_MXFiTPBKWb52GmZTjDGjIRE4FPIZneglGSXhahGn1KQqleJoXaSgBRiPn5MR5QaP6Vv3PxEQmeQbljbotr9VSLcorKK_USv2kl-_0uy0_AYM8jqdJJionPdRftSKHlfoNLvghRTkXdjxjgRvUtjZw5jB0kCHa6G2m--TlvXkRwI_yTKflATZp-bHDeJWV38l6r3DwJ0Ui1wGMupnr0LOOwAYOPd0IR0dmEI-CaH-v8W8t98GKvVj5BivEMwy4UevQ4WuI3EbcAN-6XdoZHyi0C8mtLQ3DfZC4uyGJZ64BhD1qcPAGB2wF0gjONZn3Wr01FPaDdA3e90NJ2sx2Ack1yKwm67gBCVqm2M9Wo01sIoSxFAV0-4yzN_0g1-LODsCIfRixKRCNArUIaw50Gw124AAPLc-9V143PK8pbgnYZom1JbaF_Fc1dw3bhu9iUJ_VFyDnpfpDlf9Sy62KqUV9npqa0SdnfZwxmnrGhj6Yp7yhTTskE28T4XDTPbDtMFPfiJPr8p3mp_xgJPpavqeVj0CZiLCF-qEWtVDO5jJ4HczES90Jg_aIHbatatlWKui-SiK64y501LElX4lUjC2fppGIw_lUjq1xdkmm8zN9wT2JEpkXli-LubCtcC7z52-zyea9sqlvxWrx8h-kAc1a)
+gantt
+    title A Gantt Diagram
+    dateFormat  DD-MM-YYYY
+    
+    section фитнес сознания 0 offline
+        поток 3 :active,fs0_3_offline, 10-02-2022,24-02-2022
+    section фитнес сознания 1 offline
+        поток 2  :done,fs1_2_offline,17-01-2022,14-02-2022
+        поток 3  :crit,fs1_3_offline, 03-03-2022,05-05-2022
+        %% поток 4  :fs1_4_offline,
+        
+    section фитнес сознания 2 offline
+        поток 1  :done, fs2_1_offline, 09-12-2021,22-01-2022
+        поток 2  :fs2_2_offline,
+        %% поток 3  :fs2__offline,
+
+    section фитнес сознания 3 offline
+        поток 1  :done,fs3_1_offline,06-12-2021,12-01-2022 
+        поток 2  :active,fs3_2_offline,14-02-2022,23-03-2022
+        %% поток 3  :fs3_3_offline,
+
+    section фитнес сознания 1 online
+        поток 1  :done,fs1_1_online, 07-12-2021, 17-02-2022
+        поток 2  :crit,fs1_2_online, after fs0_3_offline,10w
+        %% поток 3  :fs1_3_online,
+
+    section фитнес сознания 2 online
+        поток 2 :crit,fs2_2_online, 22-02-2022,03-05-2022
+        %% поток 3  :fs2_3_online,
+
+    section фитнес сознания 3 online
+        %% поток 1  :fs3_1_online, 
+        %% поток 2  :fs3_2_online,
+        %% поток 3  :fs3_3_online,
+            
+    
+    section ВМ онлайн
+        поток 1  :active,vm1_1_online, 24-01-2022,04-04-2022
+    
+    section ВМ оффлайн
+        поток 1  :active,vm1_1_online,14-01-2022,29-03-2022 
+        
+    section Ретриты
+        Путь к себе :crit,put_k_sebe, 05-03-2022,09-03-2022
